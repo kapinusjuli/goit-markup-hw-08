@@ -1,0 +1,166 @@
+ /*team*/
+    
+    .container-team {
+    display: flex;
+    margin: 0px auto;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    
+    width: 1200px;
+    padding: 32px 15px 94px 15px;
+    
+    
+    
+    }
+    
+    .team-section {
+    background-color: #F5F4FA;
+    }
+    
+    .team {
+    
+     
+    margin-right: 30px;
+    
+    
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    
+    
+    
+    font-size: 16px;
+    line-height: 1.19em;
+    text-align: center;
+    &:nth-last-child {
+      margin-right: 0;
+   
+   }
+   
+   
+   
+   & h2{
+   
+   padding-bottom: 50px;
+   
+   
+   
+   }
+   
+   & h3 {
+   margin: 0;
+   padding-bottom: 10px;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.19;
+   }
+   
+   
+   
+   & p {
+   margin: 0;
+   padding-bottom: 10px;
+   }
+   
+   }
+    
+    .team-descrption {
+       padding-top: 30px;
+          
+    
+       background-color: $primary-text-color;
+    
+    
+    
+    }
+    
+    .photo {
+       display: block;
+    }
+    
+    
+    .personal-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      padding-bottom: 24px;
+      
+      margin: 0;
+      
+      color: #AFB1B8;
+      
+      transition: $transition-project;
+      
+          
+    &:hover {color: var(--accent-color);}
+    
+    &:focus{color: var(--accent-color);}
+    }
+    .link-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .link-icon {
+    
+    margin-bottom: 0px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    
+    transition: $transition-project;
+    
+    
+    
+    &:hover {
+        
+    background-color: $accent-color;
+    border-radius: 50%;
+    fill: $primary-text-color;
+    }
+    
+    &:focus {
+    
+    background-color: $accent-color;
+    border-radius: 50%;
+    fill: $primary-text-color;
+    }
+    
+    &:nth-child(4) {
+    margin-right: 0px;
+    
+    }
+   }
+    .socset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    }
+    
+    
+    .socset-icon{
+    fill: $primary-text-color;
+    }
+    
+    .link-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+    transition: $transition-project;
+    
+   }
+    
+    .link-icon:hover svg{
+    fill: $primary-text-color;
+    
+    }

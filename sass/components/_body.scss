@@ -1,0 +1,58 @@
+
+p {
+    background-color: $primary-text-color;
+    color: $title-text-color;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+    
+}
+
+.container {
+
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    }
+
+
+
+
+    ul {
+        margin: 0;
+        padding-left: 0;
+        
+        
+        list-style: none;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0.03em;
+    }
+    
+    a {
+    display: block;
+    text-decoration: none;
+    
+    }
+
+    section {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+
+    body h2 {
+        color: $title-text-color-h;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0.03em;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        
+        
+        & h3 {
+            color: $title-text-color-h;
+            font-family: Roboto, sans-serif;
+            letter-spacing: 0.03em;
+        }
+    }
+         
