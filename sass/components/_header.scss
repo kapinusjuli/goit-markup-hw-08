@@ -3,16 +3,29 @@
     @media screen and (min-width: 480px) {
         width: 480px;
       } 
+    
+      @media screen and (min-width: 768px) {
+        width: 768px;
+      } 
+
+      @media screen and (min-width: 1200px) {
+        width: 1200px;
+      } 
 }
 
 header a {color: $title-text-color-h}
 
 .nav{
-    /* display: flex; */
+    
     text-align: center;
     justify-content: space-between;
     align-content: center;
     align-items: center;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+      } 
+
 }
 
 
@@ -38,9 +51,18 @@ header a {color: $title-text-color-h}
 
 
 .site-nav  {
-    /* display: flex; */
-    display: none;
-    align-items: center;
+    
+    @media screen and (min-width: 480px) {
+        display: none;
+        
+      } 
+    
+      @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+      } 
+   
+    
     
 
  
@@ -163,5 +185,14 @@ header a {color: $title-text-color-h}
 
     padding-top: 16px;
     padding-bottom: 16px;
+
 }
 
+.menu {
+    
+
+    @media screen and (min-width: 768px) {
+        display: none;
+        
+      } 
+}

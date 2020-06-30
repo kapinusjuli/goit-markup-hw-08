@@ -17,12 +17,23 @@ html {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 header a {
   color: #212121;
 }
 
 .nav {
-  /* display: flex; */
   text-align: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -32,6 +43,14 @@ header a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .logo {
@@ -53,12 +72,21 @@ header a {
   color: #000000;
 }
 
-.site-nav {
-  /* display: flex; */
-  display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 480px) {
+  .site-nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .site-nav-item:nth-last-child() {
@@ -174,6 +202,12 @@ header a {
           align-items: center;
   padding-top: 16px;
   padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
 }
 
 .hero {
