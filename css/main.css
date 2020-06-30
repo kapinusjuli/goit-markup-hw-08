@@ -539,6 +539,8 @@ header a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0px auto;
   padding: 94px 0;
   -webkit-box-align: center;
@@ -548,12 +550,17 @@ header a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   cursor: pointer;
-  width: 480px;
   padding: 32px 15px 0px 15px;
 }
 
+@media screen and (min-width: 480px) {
+  .clients {
+    width: 480px;
+  }
+}
+
 .client {
-  width: 170px;
+  width: 50%;
   height: 90px;
   -webkit-box-align: center;
       -ms-flex-align: center;

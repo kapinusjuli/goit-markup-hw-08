@@ -6,6 +6,7 @@
     
     .clients {
     display: flex;
+    flex-wrap: wrap;
     margin: 0px auto;
     padding: 94px 0;
     align-items: center;
@@ -13,16 +14,19 @@
     cursor: pointer;
     
     
-    width: 480px;
+    
     padding: 32px 15px 0px 15px;
     
     
+    @media screen and (min-width: 480px) {
+        width: 480px;
+      } 
     
     
     }
     
     .client {
-        width: 170px;
+        width: 50%;
         height: 90px;
         align-items: center;
         justify-content: center;
