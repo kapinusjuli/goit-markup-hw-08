@@ -1,9 +1,13 @@
-
+.container {
+    @media screen and (min-width: 480px) {
+        width: 480px;
+      } 
+}
 
 header a {color: $title-text-color-h}
 
 .nav{
-    display: flex;
+    /* display: flex; */
     text-align: center;
     justify-content: space-between;
     align-content: center;
@@ -33,7 +37,8 @@ header a {color: $title-text-color-h}
 
 
 .site-nav  {
-    display: flex;
+    /* display: flex; */
+    display: none;
     align-items: center;
     
 
@@ -95,7 +100,8 @@ header a {color: $title-text-color-h}
 
 }
 .auth-nav{
-     display: flex;
+   /*   display: flex; */
+     display: none;
      align-items: center;
      vertical-align: center;
      padding: 32px 50px;
@@ -130,7 +136,7 @@ header a {color: $title-text-color-h}
 
 
 .auth-nav-item {
-    display: flex;
+   /*  display: flex; */
     vertical-align: center;
     
     &:not(:last-child) {
@@ -149,3 +155,12 @@ header a {color: $title-text-color-h}
     margin-right: 10px;
 }
   
+.mob-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+

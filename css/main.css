@@ -11,14 +11,18 @@ html {
           box-sizing: inherit;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
 header a {
   color: #212121;
 }
 
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /* display: flex; */
   text-align: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -50,9 +54,8 @@ header a {
 }
 
 .site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /* display: flex; */
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -113,9 +116,8 @@ header a {
 }
 
 .auth-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*   display: flex; */
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -144,9 +146,7 @@ header a {
 }
 
 .auth-nav-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*  display: flex; */
   vertical-align: center;
 }
 
@@ -162,33 +162,49 @@ header a {
   margin-right: 10px;
 }
 
+.mob-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
 .hero {
-  padding: 200px 0px 210px 0px;
+  padding: 118px 0px 118px 0px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   background-size: cover;
   color: #FFFFFF;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/hero.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero.jpg);
   background-position: center;
-  font-family: Roboto, sans-serif;
-  font-weight: 700;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
 }
 
 .hero-title {
-  margin: 0 auto 46px auto;
-  width: 646px;
+  margin: 0 auto 30px auto;
+  width: 360px;
   font-family: Roboto, sans-serif;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
-  font-size: 1.0em;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
   font-weight: 900;
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    width: 480px;
+  }
 }
 
 .button {
@@ -214,31 +230,11 @@ header a {
   color: #2196f3;
 }
 
-.examples-button {
-  color: #212121;
-  background-color: #F5F4FA;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62em;
-  text-align: center;
-  border-width: 0px;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.examples-button:hover {
-  color: #FFFFFF;
-  background-color: #2196f3;
-}
-
-.examples-button:focus {
-  color: #FFFFFF;
-  background-color: #2196f3;
-}
-
 /*features*/
 .features {
   margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .features > h2 {
@@ -254,13 +250,24 @@ header a {
   padding: 0;
 }
 
-.features p {
-  width: 270;
+@media screen and (min-width: 480px) {
+  .features {
+    width: 480px;
+  }
+}
+
+.feature-icon {
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
 }
 
 .feature-item::before {
   display: block;
-  width: 270px;
+  width: 450px;
   height: 120px;
   content: '';
   display: block;
@@ -290,18 +297,22 @@ header a {
 }
 
 .container-features {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /* display: flex; */
   margin: 0px auto;
   padding: 0px;
-  width: 1200px;
+  /* width: 1200px; */
   padding: 32px 15px 0px 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container-features {
+    width: 480px;
+  }
 }
 
 .feature-item {
   display: block;
-  width: 270px;
+  /* width: 270px; */
   background-color: #FFFFFF;
   color: #757575;
   font-family: Roboto, sans-serif;
@@ -317,9 +328,7 @@ header a {
 
 /* products */
 .container-products {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /* display: flex; */
   margin: 0px auto;
   padding: 0px;
   -webkit-box-align: center;
@@ -328,7 +337,7 @@ header a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 1200px;
+  /* width: 1200px; */
   padding: 32px 15px 0px 15px;
 }
 
@@ -355,13 +364,8 @@ header a {
 }
 
 .product-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  /* display: flex;
+    flex-direction: column-reverse; */
 }
 
 .products-description {
@@ -370,9 +374,7 @@ header a {
 
 /*team*/
 .container-team {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /* display: flex; */
   margin: 0px auto;
   padding: 0px;
   -webkit-box-align: center;
@@ -381,7 +383,7 @@ header a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 1200px;
+  width: 480px;
   padding: 32px 15px 94px 15px;
 }
 
@@ -546,7 +548,7 @@ header a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   cursor: pointer;
-  width: 1200px;
+  width: 480px;
   padding: 32px 15px 0px 15px;
 }
 
@@ -603,7 +605,7 @@ p {
 }
 
 .container {
-  width: 1200px;
+  /* width: 1200px; */
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -773,6 +775,28 @@ img {
   font-size: 16px;
   line-height: 1.62;
   cursor: pointer;
+}
+
+.examples-button {
+  color: #212121;
+  background-color: #F5F4FA;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62em;
+  text-align: center;
+  border-width: 0px;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.examples-button:hover {
+  color: #FFFFFF;
+  background-color: #2196f3;
+}
+
+.examples-button:focus {
+  color: #FFFFFF;
+  background-color: #2196f3;
 }
 
 /*footer*/

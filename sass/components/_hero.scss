@@ -1,11 +1,11 @@
 .hero {
         
-    padding: 200px 0px 210px 0px;
+    padding: 118px 0px 118px 0px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    max-width: 1600px;
-    height: 600px;
+    max-width: 480px;
+    height: 400px;
     background-size: cover;
         
     color: $primary-text-color;
@@ -17,29 +17,28 @@
         
         background-position: center   ;
         
-        
-        font-family: Roboto, sans-serif;
-        font-weight: 700;
-        font-size: 44px;
-        line-height: 1.36;
-        letter-spacing: 0.06em;
-        
-        
+              
         
         &-title {
           
-          margin: 0 auto 46px auto;
+          margin: 0 auto 30px auto;
           
-          width: 646px;
+          width: 360px;
           
           
           font-family: Roboto, sans-serif;
-          letter-spacing: 0.06em;
           text-transform: uppercase;
-          font-size: 1.0em;
+          
+          font-size: 26px;
+          line-height: 1.62;
+          letter-spacing: 0.06em;
           font-weight: 900;
+         
           
         }
+        @media screen and (min-width: 480px) {
+          width: 480px;
+        }  
         }
         
     
@@ -67,26 +66,4 @@
   }  
   }
         
-        
-.examples-button{
-            
-            
-    color: $title-text-color-h;
-    background-color: #F5F4FA;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62em;
-    text-align: center;
-    border-width: 0px;
-
-    transition: $transition-project;
-
-
-        
-&:hover {color: $primary-text-color;
-    background-color: $accent-color;}
-            
-&:focus {color: $primary-text-color;
-   background-color: $accent-color;}
-}
-                
+   

@@ -3,6 +3,9 @@
 
 .features{
     margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     &>h2 {
         margin: 0px;
         padding: 0px;
@@ -16,19 +19,27 @@
     padding: 0;
     
     }
+    @media screen and (min-width: 480px) {
+        width: 480px;
+      } 
     
-    & p {
-    width: 270;
-    }
        
 }
 
+.feature-icon {
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $title-text-color-h;
+}
 
 
     .feature-item::before {
         display: block;
 
-        width: 270px;
+        width: 450px;
         height: 120px;
         content: '';
         display: block;
@@ -61,20 +72,22 @@ background-image: url("../images/astronaut.svg");
 
 
 .container-features {
-display: flex;
+/* display: flex; */
 margin: 0px auto;
 padding: 0px;
 
-width: 1200px;
+/* width: 1200px; */
 padding: 32px 15px 0px 15px;
-
+@media screen and (min-width: 480px) {
+    width: 480px;
+  }  
 
 }
 
 
 .feature-item {
 display: block;
-width: 270px;
+/* width: 270px; */
 
 
 background-color: $primary-text-color;
@@ -84,6 +97,7 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
+
 
 
 &:not(:last-child) {

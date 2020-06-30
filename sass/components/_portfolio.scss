@@ -128,4 +128,28 @@
     cursor: pointer;
     }
     
+         
+.examples-button{
+            
+            
+    color: $title-text-color-h;
+    background-color: #F5F4FA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62em;
+    text-align: center;
+    border-width: 0px;
+
+    transition: $transition-project;
+
+
+        
+&:hover {color: $primary-text-color;
+    background-color: $accent-color;}
+            
+&:focus {color: $primary-text-color;
+   background-color: $accent-color;}
+}
+                
+
     
