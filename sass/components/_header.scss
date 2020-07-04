@@ -28,6 +28,13 @@ header a {color: $title-text-color-h}
 
 }
 
+.nav-footer{
+    @media screen and (min-width: 768px) {
+         padding-top: 21px;
+       } 
+     
+}
+
 
 .logo {
     display: flex;
@@ -45,9 +52,6 @@ header a {color: $title-text-color-h}
     &-right {
         color: #000000;}
 }
-
-
-
 
 
 .site-nav  {
@@ -124,7 +128,7 @@ header a {color: $title-text-color-h}
 }
 .auth-nav{
    /*   display: flex; */
-     display: none;
+    
      align-items: center;
      vertical-align: center;
      padding: 32px 50px;
@@ -143,6 +147,24 @@ header a {color: $title-text-color-h}
                         
 }
 
+
+@media screen and (max-width: 767px) {
+    display: none;
+    
+  }
+
+
+  
+
+@media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 12px;
+    line-height: 1.17;
+
+    padding: 21px 0px ;
+  }
      }
 
 .auth-nav-item a {
@@ -159,13 +181,15 @@ header a {color: $title-text-color-h}
 
 
 .auth-nav-item {
-   /*  display: flex; */
-    vertical-align: center;
-    
+       
     &:not(:last-child) {
-        padding-right: 50px;
-        }
         
+      @media screen and (min-width: 1200px) {
+        
+        
+        padding-right: 50px;
+    }
+    } 
     }
 
 
@@ -185,6 +209,10 @@ header a {color: $title-text-color-h}
 
     padding-top: 16px;
     padding-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+        padding: 0;
+      } 
 
 }
 
