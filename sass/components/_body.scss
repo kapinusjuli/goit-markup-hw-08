@@ -36,6 +36,13 @@ p {
     section {
         padding-top: 94px;
         padding-bottom: 94px;
+
+        
+@media screen and (max-width: 480px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+  }
+
     }
 
 
@@ -55,4 +62,10 @@ p {
             letter-spacing: 0.03em;
         }
     }
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
          

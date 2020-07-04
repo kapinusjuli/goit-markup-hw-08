@@ -9,7 +9,9 @@
     
     /* width: 1200px; */
     padding: 32px 15px 0px 15px;
-    
+    @media screen and (max-width:480px) {
+        display: none;
+    }
     }
     
     .products {
@@ -36,7 +38,9 @@
     text-transform: uppercase;
     
     }
-     
+    @media screen and (max-width:768px) {
+        display: none;
+    }
 }
         
     .product-item{

@@ -2,11 +2,11 @@
     /*footer*/
     
     .container-footer{
-    display: flex;
+ /*    display: flex; */
     
     justify-content: space-between;
-    
-    width: 1200px;
+    /* 
+    width: 1200px; */
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 28px;
@@ -14,13 +14,16 @@
     }
     
     .footer {
-    padding-top: 48px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     
     
     background-color: #2F303A;
     color: $primary-text-color;
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
+
+    text-align: center;
     
     & .logo-right {
     color: $primary-text-color;
@@ -41,12 +44,19 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71em;
+    text-align: center;
+
+          
     }
 }
     .mail {color: rgba(255, 255, 255, 0.6)}
     
-    
-    
+    .logo{
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+
     /*кнопки соцсетей в футере*/
     
     
@@ -89,6 +99,8 @@
     width: 358px;
     height: 50px;
     padding: 16px;
+    margin-right: auto;
+    margin-left: auto;
     background-color: #2F303A;
     
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -107,7 +119,7 @@
     }
     
     .footer-follow {
-     display: flex;
+     /* display: flex; */
     
     }
     .follow-next{
@@ -119,6 +131,14 @@
     display: block;
     margin-left: 12px;
     margin-top: 43px;
+
+    
+    @media screen and (max-width: 767px) {
+        margin-top: 20px;
+        
+      }
+
+
     }
     
     .footer .button {
@@ -128,6 +148,8 @@
     width: 200px;
     height: 50px;
     border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
     
     
     font-weight: 700;
@@ -141,24 +163,5 @@
            margin-left: 10px;
        }
     
-    
-    p.developed {
-    padding-top: 18px;
-    padding-bottom: 21px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    
-    color: rgba(255, 255, 255, 0.4);
-    font-weight: 400;
-    font-style: normal;
-    font-size: 12px;
-    line-height: 2em;
-    text-align: center;
-    text-transform: none;
-    }
-    
-    .developed {
-    width: 1200px;
-    margin: 0px auto;
-    }
     
     

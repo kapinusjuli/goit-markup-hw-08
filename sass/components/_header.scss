@@ -52,7 +52,7 @@ header a {color: $title-text-color-h}
 
 .site-nav  {
     
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767px) {
         display: none;
         
       } 
