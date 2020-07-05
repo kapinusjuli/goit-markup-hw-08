@@ -964,6 +964,13 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-name {
+    max-height: 36px;
+    word-wrap: normal;
+  }
+}
+
 .portfolio-type {
   margin: 0;
   font-size: 16px;
