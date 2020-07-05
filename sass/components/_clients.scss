@@ -21,6 +21,18 @@
     @media screen and (min-width: 480px) {
         width: 480px;
       } 
+      
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
+      } 
+
+    @media screen and (min-width: 1200px) {
+          width: 1200px;
+          flex-wrap: nowrap;
+        } 
     
     
     }
@@ -37,11 +49,18 @@
     
         border: 1px solid #AFB1B8;
         border-radius: 4px;
-        margin: 3.125%;
+        margin: 15px;
     
          
         transition: $transition-project;
     
+        @media screen and (min-width: 768px) {
+            width: 226px;
+          } 
+    
+        @media screen and (min-width: 1200px) {
+              width: 170px;
+            } 
     
     
     &-icon {
