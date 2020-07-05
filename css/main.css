@@ -1017,6 +1017,12 @@ img {
       flex-wrap: wrap;
 }
 
+@media screen and (min-width: 768px) {
+  .list-portfolio {
+    padding: 0;
+  }
+}
+
 .list-portfolio .item {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -1036,6 +1042,13 @@ img {
 @media screen and (min-width: 480px) {
   .item {
     max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .item {
+    max-width: 354px;
+    margin: 15px;
   }
 }
 
