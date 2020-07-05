@@ -3,6 +3,7 @@
     
     .container-footer{
  /*    display: flex; */
+ 
     
     justify-content: space-between;
     /* 
@@ -24,6 +25,12 @@
     letter-spacing: 0.03em;
 
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        
+        
+      }
     
     & .logo-right {
     color: $primary-text-color;
@@ -115,11 +122,14 @@
     letter-spacing: 0.03em;
     
     color: rgba(255, 255, 255, 0.6);
+
+    
     
     }
     
     .footer-follow {
-     /* display: flex; */
+        @media screen and (min-width: 1200px) {
+            display: flex;
     
     }
     .follow-next{
@@ -140,7 +150,18 @@
 
 
     }
-    
+    .footer-tablet {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-around;
+            
+          }
+
+          @media screen and (min-width: 1200px) {
+            
+    }
+
     .footer .button {
     
     display: flex;

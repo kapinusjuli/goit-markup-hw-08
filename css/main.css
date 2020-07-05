@@ -603,7 +603,7 @@ header a {
 
 @media screen and (min-width: 768px) {
   .team {
-    width: 370px;
+    width: 354px;
     margin: 15px;
   }
 }
@@ -1095,6 +1095,14 @@ img {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .footer .logo-right {
   color: #FFFFFF;
 }
@@ -1202,6 +1210,19 @@ img {
 @media screen and (max-width: 767px) {
   .follow {
     margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
