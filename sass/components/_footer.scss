@@ -2,16 +2,13 @@
     /*footer*/
     
     .container-footer{
- /*    display: flex; */
- 
     
     justify-content: space-between;
-    /* 
-    width: 1200px; */
+    
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 28px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     }
     
     .footer {
@@ -25,12 +22,16 @@
     letter-spacing: 0.03em;
 
     text-align: center;
-
-    @media screen and (min-width: 1200px) {
+    
+    @media screen and (min-width: 768px) {
         display: flex;
-        
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-around;
         
       }
+
+
     
     & .logo-right {
     color: $primary-text-color;
@@ -102,6 +103,19 @@
     height: 20px;
     }
 }
+
+.social {
+
+    @media screen and (min-width: 768px) {
+        margin-left: 165px;
+        
+      }
+      @media screen and (min-width: 1200px) {
+        margin-left: 0px;
+        
+      }
+}
+
     .form-input-footer {
     width: 358px;
     height: 50px;
@@ -150,17 +164,7 @@
 
 
     }
-    .footer-tablet {
-        @media screen and (min-width: 768px) {
-            display: flex;
-            align-items: baseline;
-            justify-content: space-around;
-            
-          }
-
-          @media screen and (min-width: 1200px) {
-            
-    }
+}
 
     .footer .button {
     
@@ -184,5 +188,13 @@
            margin-left: 10px;
        }
     
-    
+    .footer-decktop {
+        
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+        display: flex;
+        margin: auto;
+        
+      }
+    }
     

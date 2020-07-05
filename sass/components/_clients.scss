@@ -19,47 +19,53 @@
     
     
     @media screen and (min-width: 480px) {
-        width: 480px;
+        max-width: 480px;
+        
       } 
       
     @media screen and (min-width: 768px) {
-        width: 768px;
+        max-width: 768px;
         padding-left: 0;
         padding-right: 0;
-        margin: 0;
+        margin-right: auto;
+            margin-left: auto;
       } 
 
     @media screen and (min-width: 1200px) {
-          width: 1200px;
+          max-width: 1200px;
           flex-wrap: nowrap;
+          
         } 
     
     
     }
     
     .client {
-        width: 43.75%;
+        width: 210px;
+        padding: 20px;
         height: 90px;
         align-items: center;
         justify-content: center;
         text-align: center;
-        padding: 20px;
         fill: #AFB1B8;
         
     
         border: 1px solid #AFB1B8;
         border-radius: 4px;
-        margin: 15px;
+        margin: 15px 0;
+        
     
          
         transition: $transition-project;
     
         @media screen and (min-width: 768px) {
-            width: 226px;
-          } 
+            width: 29.427%;
+            } 
     
         @media screen and (min-width: 1200px) {
               width: 170px;
+              margin-left: 15px;
+              margin-right: 15px;
             } 
     
     
