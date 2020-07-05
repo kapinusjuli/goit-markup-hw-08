@@ -822,8 +822,8 @@ header a {
 @media screen and (min-width: 768px) {
   .clients {
     max-width: 768px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -1073,11 +1073,17 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .list-portfolio {
+    margin: 15px;
+  }
+}
+
 .list-portfolio .item {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   overflow: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .item {
