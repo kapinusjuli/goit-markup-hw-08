@@ -26,6 +26,11 @@ header a {color: $title-text-color-h}
         display: flex;
       } 
 
+      
+    @media screen and (min-width: 1200px) {
+        display: flex;
+      } 
+
 }
 
 .nav-footer{
@@ -127,13 +132,11 @@ header a {color: $title-text-color-h}
 
 }
 .auth-nav{
-   /*   display: flex; */
-    
+ 
      align-items: center;
      vertical-align: center;
-     padding: 32px 50px;
-
-
+     
+     
      color: $title-text-color;
      letter-spacing: 0.02em;
      font-weight: 500;
@@ -141,30 +144,43 @@ header a {color: $title-text-color-h}
      line-height: 1.14;
      
      
-& :focus {
-    fill: $accent-color;       
-    color: $accent-color;   
-                        
+     & :focus {
+       fill: $accent-color;       
+       color: $accent-color;   
+       
+      }
+      
+      
+      @media screen and (max-width: 767px) {
+        display: none;
+        
+      }
+      
+      
+      
+      
+      @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 12px;
+        line-height: 1.17;
+        
+        padding: 21px 0px ;
+      }
+      
+      
+      @media screen and (min-width: 1200px) {
+        
+        display: flex;
+        flex-direction: inherit;
+        
+        padding: 32px 50px;
+        letter-spacing: 0.02em;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
 }
-
-
-@media screen and (max-width: 767px) {
-    display: none;
-    
-  }
-
-
-  
-
-@media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 12px;
-    line-height: 1.17;
-
-    padding: 21px 0px ;
-  }
      }
 
 .auth-nav-item a {
@@ -181,6 +197,12 @@ header a {color: $title-text-color-h}
 
 
 .auth-nav-item {
+    
+@media screen and (min-width: 1200px) {
+  
+  display: block;
+  
+}
        
     &:not(:last-child) {
         
