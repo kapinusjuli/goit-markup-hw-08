@@ -266,7 +266,7 @@ header a {
 }
 
 @media screen and (min-width: 768px) {
-  .menu {
+  .menu-button {
     display: none;
   }
 }
