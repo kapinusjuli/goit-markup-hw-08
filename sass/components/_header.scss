@@ -286,16 +286,16 @@ header a {color: $title-text-color-h}
   }
 }
 
-.navigation,
-.contacts {
+.site-nav,
+.auth-nav {
   height: 50px;
   width: 140px;
 }
 
-.navigation {
+.site-nav-item {
   outline: 1px solid teal;
 }
 
-.contacts {
+.auth-nav-item {
   outline: 1px solid orange;
 }
